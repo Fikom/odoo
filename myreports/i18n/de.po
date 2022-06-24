@@ -1,0 +1,306 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* myreports
+#
+msgid ""
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Bank Account</span>"
+msgstr "<span class=\"o_form_label\">Bankkonto</span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Note</span>"
+msgstr "<span class=\"o_form_label\">Bemerkung</span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</span>\n"
+msgstr "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Menge</span>\n"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "<span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr "<span groups=\"account.group_show_line_subtotals_tax_included\">Gesamtkosten</span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Summe</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Summe</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Gesamtkosten</span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid ""
+"<span>All items couldn't be shipped, the following items will be shipped as "
+"soon as they become available.</span>"
+msgstr "Alle Artikel konnten nicht versendet werden, die folgenden Artikel werden versendet, sobald sie verfügbar sind."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>HR-No.: </span>"
+msgstr "<span>HRB: </span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Zwischensumme</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid ""
+"<strong class=\"text-center\">Scan me with your banking "
+"app.</strong><br/><br/>"
+msgstr "<strong class=\"text-center\">Scannen Sie mich mit Ihrer Banking App.</strong><br/><br/>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "<strong>Amount Due</strong>"
+msgstr "<strong>Fälliger Betrag</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "<strong>Description</strong>"
+msgstr "<strong>Beschreibung</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "<strong>Steuerlicher Vermerk:</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "<strong>Product</strong>"
+msgstr "<strong>Produkt</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "<strong>Qty</strong>"
+msgstr "<strong>Anzahl</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Anzahl</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Lieferadresse:</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Lieferadresse:</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Signature</strong>"
+msgstr "<strong>Unterschrift</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Zwischensumme</strong>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>Summe</strong>"
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__bank_acc_number
+msgid "Bank Account Number"
+msgstr "IBAN"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Cancelled Invoice"
+msgstr "Stornierte Rechnung"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Cancelled Purchase Order "
+msgstr "Stornierte Bestellung "
+
+#. module: myreports
+#: model:ir.model,name:myreports.model_res_company
+msgid "Companies"
+msgstr "Unternehmen"
+
+#. module: myreports
+#: model:ir.model,name:myreports.model_res_config_settings
+msgid "Config Settings"
+msgstr "Einstellungen"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Credit Note"
+msgstr "Gutschrift"
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_config_settings__note
+msgid "Default Note"
+msgstr "Standardnotiz"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Delivered"
+msgstr "Geliefert"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Disc.%"
+msgstr "Rabatt"
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__display_name
+#: model:ir.model.fields,field_description:myreports.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Draft Invoice"
+msgstr "Rechnungsentwurf"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "General"
+msgstr "Allgemein"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Image"
+msgstr "Bild"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Invoice"
+msgstr "Rechnung"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Invoicing Address:"
+msgstr "Rechnungsadresse:"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Invoicing and Shipping Address:"
+msgstr "Rechnungs- und Lieferadresse:"
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company____last_update
+#: model:ir.model.fields,field_description:myreports.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt bearbeitet am"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Lot/Serial Number"
+msgstr "Seriennummer"
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_myinvoice
+msgid "My Invoice"
+msgstr "Meine Rechnung"
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_mypickinglist
+msgid "My Picking List"
+msgstr "Mein Lieferschein"
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_mypurchaseorder
+msgid "My Purchase Order "
+msgstr "Meine Bestellung "
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "My Reports"
+msgstr "Meine Berichte"
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_mysaleorder
+msgid "My Sales Order"
+msgstr "Meine Bestellung"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Package"
+msgstr "Verpackung"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Paid on"
+msgstr "Bezahlt am"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Pos."
+msgstr "Pos."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Product"
+msgstr "Produkt"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Purchase Order "
+msgstr "Bestellung "
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Quantity"
+msgstr "Anzahl"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Received"
+msgstr "Erhalten"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Request for Quotation "
+msgstr "Angebotsanfrage "
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Tax ID"
+msgstr "Steuernummer"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Unit Price"
+msgstr "Stückpreis"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Vendor Bill"
+msgstr "Ausgangsrechnung"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Vendor Credit Note"
+msgstr "Gutschrift"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "on"
+msgstr "am"
+
+

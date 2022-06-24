@@ -1,0 +1,188 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* myreports
+#
+msgid ""
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "<span>Lieferschein </span>"
+msgstr "<span>Picking List </span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<span>Pro-Forma Rechnung </span>"
+msgstr "<span>Pro-Forma Invoice </span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<span>Rabatt</span>"
+msgstr "<span>Disc.</span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>Tel.: </span>"
+msgstr "<span>Phone: </span>"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Anfrage-Nr."
+msgstr "Order-No."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Angebot"
+msgstr "Quotation"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Angebots-Nr."
+msgstr "Quoatation-No."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Anzahl"
+msgstr "Quantity"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Artikel erhalten:"
+msgstr "Products received"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Auftrags-Nr."
+msgstr "Order No."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Auftragsbestätigung"
+msgstr "Order Confirmation"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Beschreibung"
+msgstr "Description"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Bestell-Nr."
+msgstr "Purchase Order No."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Bild"
+msgstr "Image"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid ""
+"Bitte überweisen Sie den Betrag ohne Abzüge, mit Angabe der Rechnungsnummer "
+"innerhalb von 10 Werktagen auf die unten genannte Bankverbindung."
+msgstr "Please transfer the amount without deductions, stating the invoice number within 10 working days to the bank details below."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "
+"Bitte lassen Sie uns eine Auftragsbestätigung und einen Liefertermin "
+"zukommen."
+msgstr "Please send us an order confirmation and a delivery date."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Datum"
+msgstr "Date"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Der Abrechnungszeitraum entspricht dem Leistungszeitraum."
+msgstr "The billing period corresponds to the performance period."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid ""
+"Die gelieferten Artikel bleiben bis zur vollständigen Bezahlung Eigentum der"
+msgstr "The delivered items remain, until the full payment has been made, the property of"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Einzelpreis"
+msgstr "Unit Price"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Fälligkeitsdatum"
+msgstr "Date Due"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid ""
+"Für den Fall einer Änderung ist das Angebot nicht mehr gültig und muss neu "
+"geprüft werden."
+msgstr "In the event of a change, the quotation is not longer valid and must be rechecked."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Gültig bis:"
+msgstr "Valid until:"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Kontakt"
+msgstr "Contact"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Kundenreferenz"
+msgstr "Customer reference"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Lieferdatum"
+msgstr "Delivery Date"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Ort, Datum"
+msgstr "Place, Date"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Rechnungs-Nr."
+msgstr "Invoice No."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Rechnungsdatum"
+msgstr "Invoice Date"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Unterschrift"
+msgstr "Signature"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Vielen Dank für Ihren Auftrag."
+msgstr "Thank you for your order."
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid ""
+"Wir hoffen, dass unser Angebot Ihren Vorstellungen entspricht und freuen uns"
+" auf Ihre Auftragserteilung."
+msgstr "We hope our quotation meets your expectations and we are looking forward to your order placement."
+
+

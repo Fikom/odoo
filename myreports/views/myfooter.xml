@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+        <!-- VIP Footer -->
+        <template id="myreports.myfooter">
+            <div class="footer">
+              <br></br>
+              <div class="row" style="color:#898989;font-size:9px">
+                <div class="col-3" >
+                    <div t-if="company.parent_id">
+                        <span t-field="company.parent_id"/>
+                    </div>
+                    <div t-field="company.partner_id"/>
+                    <div t-field="company.street" />
+                    <div>
+                      <span t-field="company.zip"/>
+                      <span t-field="company.city"/>
+                    </div>
+                </div>
+                <div class="col-3" >
+                    <div>
+                      <span>Tel.: </span>
+                      <span t-field="company.phone"/>
+                    </div>
+                    <div>
+                      <span>E-Mail: </span>
+                      <span t-field="company.email"/>
+                    </div>
+                    <div>
+                      <span>Web: </span>
+                      <span t-field="company.website"/>
+                    </div>
+                </div>
+                <div class="col-3">
+                  <div>
+                    <span>HR-No.: </span>
+                    <span t-field="company.company_registry"/>
+                  </div>
+                  <div>
+                    <span>VAT-ID: </span>
+                    <span t-field="company.vat"/>
+                  </div>
+                  <div>
+                    <span>CEO: </span>
+                    <span t-field="company.ceo_name"/>
+                  </div>
+                </div>
+                <div class="col-3" >
+                    <div>
+                        <span>Bank: </span>
+                        <span t-field="company.bank_name"/></div>
+                    <div>
+                        <span>IBAN: </span>
+                        <span t-field="company.bank_acc_number"/>
+                    </div>
+                    <div>
+                        <span>BIC: </span>
+                        <span t-field="company.bank_acc_bic"/>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </template>
+    </data>
+</odoo>

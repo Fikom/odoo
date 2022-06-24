@@ -1,0 +1,155 @@
+<odoo>
+    <data>
+        <!--Picking List VIP-->
+      <template id="myreports.report_mypickinglist">
+          <!--<?xml version="1.0"?>-->
+            <t t-name="myreports.report_mypickinglist">
+                <t t-call="web.html_container">
+                    <t t-foreach="docs" t-as="doc">
+                <t t-call="myreports.report_mypickinglist_document" t-lang="doc.partner_id.lang"/>
+                    </t>
+                </t>
+            </t>
+      </template>
+
+      <template id="myreports.report_mypickinglist_document">
+           <t t-name="myreports.report_mypickinglist_document">
+                <t t-call="web.basic_layout">
+                    <div class="page" style="font-size:14px">
+                      <t t-if="doc and 'company_id' in doc">
+                        <t t-set="company" t-value="doc.company_id.sudo()"/>
+                      </t>
+                      <t t-if="not doc or not 'company_id' in doc">
+                        <t t-set="company" t-value="res_company"/>
+                      </t>
+                      <div class="row">
+                        <div class="col-12" style="text-align:right" >
+                          <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="pull-right img-responsive titbl-first-rht-img" style="height:80px"/>
+                        </div>
+                      </div>
+                      <div style="height:80px"/>
+                      <div class="row">
+                        <div class="col-8" style="color:#898989;font-size:9px;">
+                          <span t-field="company.partner_id"/> &#183;
+                          <span t-field="company.street" /> &#183;
+                          <span t-field="company.zip"/> &#183;
+                          <span t-field="company.city"/>
+                        </div>
+                      </div>
+                      <br></br>
+
+                      <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
+                      <t t-set="partner" t-value="doc.partner_id or (doc.move_lines and doc.move_lines[0].partner_id) or False"/>
+                      <div class="row">
+                        <div class="col-6">
+                          <address t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: true}"/>
+                        </div>
+                        <div class="col-3">
+
+                          <div class="text-right">Auftrags-Nr.</div>
+                          <div class="text-right">Datum</div>
+                          <div t-if="doc.user_id.name" class="text-right">Kontakt</div>
+                          <div t-if="doc.sudo().sale_id.client_order_ref" class="text-right">Kundenreferenz</div>
+                        </div>
+                        <div class="col-3">
+                           <div class="text-right" style="font-size:14px" t-field="doc.origin"> </div>
+                           <div class="text-right" style="font-size:14px" t-if="not doc.origin"> <br></br> </div>
+                           <div class="text-right" t-field="doc.scheduled_date" t-options="{'format': 'd. MMMM y'}"> </div>
+                           <div class="text-right" t-if="doc.user_id.name" t-field="doc.user_id.name"> </div>
+                           <div class="text-right" t-if="doc.sudo().sale_id.client_order_ref">
+                              <p t-field="doc.sudo().sale_id.client_order_ref"/>
+                           </div>
+                       </div>
+                      </div>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+
+                      <h2 class="mt16" style="font-size: 20px">
+                          <span>Lieferschein </span>
+                          <span t-field="doc.name"/>
+                      </h2>
+                      <br></br>
+                        <table class="table table-sm" name="stock_move_table">
+                            <thead>
+                                <tr class="border-black"  style="background-color:#EBEBEB">
+                                    <th name="th_position" class="text-left">Pos.</th>
+                                    <th name="th_position" class="text-left">Image</th>
+                                    <th name="th_sm_product" ><strong>Product</strong></th>
+                                    <th name="th_sm_quantity" ><strong>Quantity</strong></th>
+                                    <th name="th_position" class="text-center">Package</th>
+                                    <th name="th_position" class="text-center">Delivered</th>
+                                    <th name="th_position" class="text-center">Received</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="lines" t-value="doc.move_lines.filtered(lambda x: x.product_uom_qty)"/>
+                                <t t-set="index" t-value="0"/>
+                                <tr t-foreach="lines" t-as="move">
+                                    <td style="vertical-align:middle">
+                                      <t t-set="index" t-value="index+1"/>
+                                      <span t-esc="index"/>
+                                    </td>
+                                    <td class="text-left" style="vertical-align:middle"> <span t-if="move.product_id.image_128" t-field="move.product_id.image_128" t-options='{"widget": "image", "style":"width: 100px;height: 100px"} '/></td>
+                                    <td style="vertical-align:middle">
+                                        <span t-field="move.product_id"/>
+
+                                    </td>
+                                    <td style="vertical-align:middle">
+                                        <span t-field="move.product_uom_qty"/>
+                                    </td>
+                                    <td style="text-align:center; vertical-align:middle" ></td>
+                                    <td style="text-align:center; vertical-align:middle" > &#9633; </td>
+                                    <td style="text-align:center; vertical-align:middle"> &#9633; </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <t t-set="backorders" t-value="doc.backorder_ids.filtered(lambda x: x.state not in ('done', 'cancel'))"/>
+                        <t t-if="doc.backorder_ids and backorders">
+                            <p>
+                                <span>All items couldn't be shipped, the following items will be shipped as soon as they become available.</span>
+                            </p>
+                        </t>
+                        <br></br>
+
+                        <p t-field="doc.note"/>
+                        <div class="col-12">
+                          <p>Die gelieferten Artikel bleiben bis zur vollständigen Bezahlung Eigentum der <span t-field="company.partner_id"/>.</p>
+                        </div>
+
+                        <div style="page-break-inside: avoid;">
+                          <div class="col-12">
+                            <p>Artikel erhalten:</p>
+                          </div>
+                          <br></br>
+                          <br></br>
+                          <div class="row">
+                            <div class="col-6">
+                               <p style="text-align: center">_______________________________</p>
+                               <p style="text-align: center">Ort, Datum</p>
+                            </div>
+                            <div class="col-6">
+                              <p style="text-align: center">_______________________________</p>
+                              <p style="text-align: center">Unterschrift</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div t-if="doc.signature" class="mt32 ml64 mr4" name="signature">
+                            <div class="offset-8">
+                                <strong>Signature</strong>
+                            </div>
+                            <div class="offset-8">
+                                <img t-att-src="image_data_uri(doc.signature)" style="max-height: 4cm; max-width: 8cm;"/>
+                            </div>
+                            <div class="offset-8 text-center">
+                                <p t-field="doc.partner_id.name"/>
+                            </div>
+                        </div>
+                    </div>
+                    <t t-call="myreports.myfooter"></t>
+                </t>
+           </t>
+        </template>
+    </data>
+</odoo>

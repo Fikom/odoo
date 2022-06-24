@@ -1,0 +1,556 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* myreports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20220522\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-31 18:25+0000\n"
+"PO-Revision-Date: 2022-05-31 18:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Bank Account</span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Note</span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</span>\n"
+"                      <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid ""
+"<span groups=\"account.group_show_line_subtotals_tax_excluded\">Summe</span>\n"
+"                                    <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid ""
+"<span>All items couldn't be shipped, the following items will be shipped as "
+"soon as they become available.</span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>BIC: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>Bank: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>CEO: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>E-Mail: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>HR-No.: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>IBAN: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "<span>Lieferschein </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<span>Pro-Forma Rechnung </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<span>Rabatt</span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>Tel.: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>VAT-ID: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.myfooter
+msgid "<span>Web: </span>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid ""
+"<strong class=\"text-center\">Scan me with your banking "
+"app.</strong><br/><br/>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "<strong>Amount Due</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "<strong>Description</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "<strong>Incoterm: </strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "<strong>Product</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "<strong>Qty</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "<strong>Quantity</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Shipping Address:</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "<strong>Shipping address:</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Signature</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Anfrage-Nr."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Angebot"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Angebots-Nr."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Anzahl"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Artikel erhalten:"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Auftrags-Nr."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Auftragsbestätigung"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__bank_acc_bic
+msgid "BIC"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__bank_acc_number
+msgid "Bank Account Number"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__bank_name
+msgid "Bank Name"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Beschreibung"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Bestell-Nr."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Bild"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid ""
+"Bitte lassen Sie uns eine Auftragsbestätigung und einen Liefertermin "
+"zukommen."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid ""
+"Bitte überweisen Sie den Betrag ohne Abzüge, mit Angabe der Rechnungsnummer "
+"innerhalb von 10 Werktagen auf die unten genannte Bankverbindung."
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__ceo_name
+msgid "CEO"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Cancelled Invoice"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Cancelled Purchase Order #"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model,name:myreports.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model,name:myreports.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Credit Note"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Datum"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_config_settings__note
+msgid "Default Note"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Delivered"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Der Abrechnungszeitraum entspricht dem Leistungszeitraum."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid ""
+"Die gelieferten Artikel bleiben bis zur vollständigen Bezahlung Eigentum der"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Disc.%"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__display_name
+#: model:ir.model.fields,field_description:myreports.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Draft Invoice"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Einzelpreis"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Fälligkeitsdatum"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid ""
+"Für den Fall einer Änderung ist das Angebot nicht mehr gültig und muss neu "
+"geprüft werden."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "General"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Gültig bis:"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company__id
+#: model:ir.model.fields,field_description:myreports.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Image"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Invoice"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Invoicing Address:"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Invoicing and Shipping Address:"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Kontakt"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Kundenreferenz"
+msgstr ""
+
+#. module: myreports
+#: model:ir.model.fields,field_description:myreports.field_res_company____last_update
+#: model:ir.model.fields,field_description:myreports.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Lieferdatum"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Lot/Serial Number"
+msgstr ""
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_myinvoice
+msgid "My Invoice"
+msgstr ""
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_mypickinglist
+msgid "My Picking List"
+msgstr ""
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_mypurchaseorder
+msgid "My Purchase Order"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.res_config_settings_view_form
+msgid "My Reports"
+msgstr ""
+
+#. module: myreports
+#: model:ir.actions.report,name:myreports.action_report_mysaleorder
+msgid "My Sales Order"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Ort, Datum"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Package"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Paid on"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Pos."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Product"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Purchase Order #"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Quantity"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Received"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Rechnungs-Nr."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Rechnungsdatum"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypurchaseorder_document
+msgid "Request for Quotation #"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Tax ID"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Unit Price"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "Unterschrift"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Vendor Bill"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "Vendor Credit Note"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid "Vielen Dank für Ihren Auftrag."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mysaleorder_document
+msgid ""
+"Wir hoffen, dass unser Angebot Ihren Vorstellungen entspricht und freuen uns"
+" auf Ihre Auftragserteilung."
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_mypickinglist_document
+msgid "_______________________________"
+msgstr ""
+
+#. module: myreports
+#: model_terms:ir.ui.view,arch_db:myreports.report_myinvoice_document
+msgid "on"
+msgstr ""

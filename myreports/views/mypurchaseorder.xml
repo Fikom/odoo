@@ -1,0 +1,130 @@
+<odoo>
+    <data>
+                <!--Purchase Order VIP-->
+      <template id="myreports.report_mypurchaseorder">
+          <!--<?xml version="1.0"?>-->
+            <t t-name="myreports.report_mypurchaseorder">
+                <t t-call="web.html_container">
+                    <t t-foreach="docs" t-as="doc">
+                <t t-call="myreports.report_mypurchaseorder_document" t-lang="doc.partner_id.lang"/>
+                    </t>
+                </t>
+            </t>
+      </template>
+
+      <template id="myreports.report_mypurchaseorder_document">
+           <t t-name="myreports.report_mypurchaseorder_document">
+                <t t-call="web.basic_layout">
+                    <div class="page" style="font-size:14px">
+                      <t t-if="doc and 'company_id' in doc">
+                        <t t-set="company" t-value="doc.company_id.sudo()"/>
+                      </t>
+                      <t t-if="not o or not 'company_id' in o">
+                        <t t-set="company" t-value="res_company"/>
+                      </t>
+                      <div class="row">
+                        <div class="col-12" style="text-align:right" >
+                          <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="pull-right img-responsive titbl-first-rht-img" style="height:80px"/>
+                        </div>
+                      </div>
+                      <div style="height:80px"/>
+                      <div class="row">
+                        <div class="col-8" style="color:#898989;font-size:9px;">
+                          <span t-field="company.partner_id"/> &#183;
+                          <span t-field="company.street" /> &#183;
+                          <span t-field="company.zip"/> &#183;
+                          <span t-field="company.city"/>
+                        </div>
+                      </div>
+                      <br></br>
+                      <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)"/>
+                      <div class="row">
+                        <div class="col-6">
+                            <address t-field="doc.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}"/>
+                        </div>
+                        <div class="col-4">
+                          <div t-if="doc.state =='draft'" class="text-right">Anfrage-Nr.</div>
+                          <div class="text-right" t-if="doc.state in ['sent','to approve', 'purchase', 'done']">Bestell-Nr.</div>
+                          <div class="text-right">Datum</div>
+                          <div class="text-right">Kontakt</div>
+                          <div class="text-right" t-if="doc.partner_ref">Kundenreferenz</div>
+                          <div class="text-right" t-if="doc.date_planned">Lieferdatum</div>
+                        </div>
+                        <div class="col-2">
+                           <div class="text-right" style="font-size:14px" t-field="doc.name"></div>
+                           <div class="text-right" t-field="doc.date_order" t-options="{'format': 'd. MMMM y'}"></div>
+                           <div class="text-right" t-field="doc.user_id.name"></div>
+                           <div class="text-right" t-if="doc.partner_ref" t-field="doc.partner_ref"></div>
+                           <div class="text-right" t-if="doc.date_planned" t-field="doc.date_planned" t-options="{'format': 'd. MMMM y'}"></div>
+                       </div>
+                      </div>
+
+                      <t t-if="doc.dest_address_id">
+                          <strong>Shipping address:</strong>
+                          <div t-if="doc.dest_address_id">
+                            <div t-field="doc.dest_address_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True, &quot;phone_icons&quot;: True}" name="purchase_shipping_address"/>
+                          </div>
+                      </t>
+
+                      <div style="height:60px"/>
+                      <div class="oe_structure"/>
+
+                      <h2 style="font-size: 20px" t-if="doc.state == 'draft'">Request for Quotation <span t-field="doc.name"/></h2>
+                      <h2 style="font-size: 20px" t-if="doc.state in ['sent', 'to approve']">Purchase Order <span t-field="doc.name"/></h2>
+                      <h2 style="font-size: 20px" t-if="doc.state in ['purchase', 'done']">Purchase Order <span t-field="doc.name"/></h2>
+                      <h2 style="font-size: 20px" t-if="doc.state == 'cancel'">Cancelled Purchase Order <span t-field="doc.name"/></h2>
+
+                      <table class="table table-sm o_main_table">
+                          <thead>
+                              <tr class="border-black" style="background-color:#EBEBEB">
+                                  <th name="th_position" class="text-left">Pos.</th>
+                                  <th name="th_article" class="text-left">Product</th>
+                                  <th name="th_description"><strong>Description</strong></th>
+                                  <th name="th_quantity" class="text-center"><strong>Qty</strong></th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <t t-set="index" t-value="0"/>
+                              <tr t-foreach="doc.order_line" t-as="line">
+                                  <t t-if="not line.display_type">
+                                      <t t-set="index" t-value="index+1" />
+                                      <td><span t-esc="index"/></td>
+                                      <td name="td_name"><span t-field="line.product_id.name"/></td>
+                                      <td id="product">
+                                          <span t-field="line.name"/>
+                                      </td>
+                                      <td class="text-center">
+                                          <span t-field="line.product_qty"/>
+                                          <span t-field="line.product_uom.name" groups="uom.group_uom"/>
+                                      </td>
+                                  </t>
+                                  <t t-if="line.display_type == 'line_section'">
+                                      <td colspan="99" id="section" style="background-color:#F0F0F0">
+                                          <span t-field="line.name"/>
+                                      </td>
+                                      <t t-set="current_section" t-value="line"/>
+                                  </t>
+                                  <t t-if="line.display_type == 'line_note'">
+                                      <td colspan="99" id="note">
+                                          <span t-field="line.name"/>
+                                      </td>
+                                  </t>
+
+                              </tr>
+                          </tbody>
+                      </table>
+                      <br></br>
+                      <p t-field="doc.notes"/>
+                      <br></br>
+
+                        <p t-if="doc.state in ['purchase', 'done']">Bitte lassen Sie uns eine Auftragsbestätigung und einen Liefertermin zukommen.</p>
+                    </div>
+
+                    <t t-call="myreports.myfooter"></t>
+                </t>
+           </t>
+        </template>
+
+
+    </data>
+</odoo>
